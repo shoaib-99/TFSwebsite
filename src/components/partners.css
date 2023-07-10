@@ -1,0 +1,40 @@
+.logo-carousel {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    animation: carousel-scroll 20s linear infinite;
+    width: fit-content;
+  }
+  
+  .carousel-item {
+    flex: 0 0 100%;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel-item img {
+    max-width: 70%;
+    height: auto;
+  }
+  
+  .partners-heading {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #FFC40A;
+  }
+  
+  @keyframes carousel-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-50% * 6));
+    }
+  }
